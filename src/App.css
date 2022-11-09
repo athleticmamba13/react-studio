@@ -4,6 +4,14 @@
 
 }
 
-.BakeryItem {
-  
+.bakeryItem {
+    background-color: gray;
+    color: gray;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
 }
