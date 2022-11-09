@@ -22,16 +22,17 @@ function App() {
       <div class="flex-container">
         {bakeryData.map((item) => ( // TODO: map bakeryData to BakeryItem components
           // <p>Bakery Item {index}</p> // replace with BakeryItem component
-          <BakeryItem setCartItems={setCartItems} bakeryItem={item.name} itemImg={item.image} itemDesc={item.description} price={item.price}/>
+          <BakeryItem cartItems={cartItems} cartTotal={cartTotal} setCartTotal={setCartTotal} setCartItems={setCartItems} bakeryItem={item.name} itemImg={item.image} itemDesc={item.description} price={item.price}/>
         ))}
       </div>
 
       <div>
         <h2>Cart</h2>
         {cartItems.map((item) => ( // TODO: map bakeryData to BakeryItem components
-          <p>item</p> 
+          <p>1x {item}</p> 
         ))}
         {/* TODO: render a list of items in the cart */}
+        <p>Cart Total: ${cartTotal}</p>
       </div>
     </div>
   );
